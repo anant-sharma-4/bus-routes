@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <script>
+        L_NO_TOUCH = false;
+        L_DISABLE_3D = false;
+    </script>
+
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <style>
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css" />
+
+    <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>
+        #map_bc7b4f5529186df48aec85bee158450a {
+            position: relative;
+            width: 100.0%;
+            height: 100.0%;
+            left: 0.0%;
+            top: 0.0%;
+        }
+
+        .leaflet-container {
+            font-size: 1rem;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="folium-map" id="map_bc7b4f5529186df48aec85bee158450a"></div>
+
+</body>
+<script>
+
+
+    var map_bc7b4f5529186df48aec85bee158450a = L.map(
+        "map_bc7b4f5529186df48aec85bee158450a",
+        {
+            center: [23.251609873348414, 77.52345615679546],
+            crs: L.CRS.EPSG3857,
+            ...{
+                "zoom": 13,
+                "zoomControl": true,
+                "preferCanvas": false,
+            }
+
+        }
+    );
+
+
+
+
+
+    var tile_layer_89ee8f1634d1955fc534af054be51f58 = L.tileLayer(
+        "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+        {
+            "minZoom": 0,
+            "maxZoom": 19,
+            "maxNativeZoom": 19,
+            "noWrap": false,
+            "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+            "subdomains": "abc",
+            "detectRetina": false,
+            "tms": false,
+            "opacity": 1,
+        }
+
+    );
+
+
+    tile_layer_89ee8f1634d1955fc534af054be51f58.addTo(map_bc7b4f5529186df48aec85bee158450a);
+
+
+    var poly_line_6b314197069d5f639def1aa9fbdeda34 = L.polyline(
+        [[23.251609873348414, 77.52345615679546], [23.25088533379877, 77.5175949301517], [23.252727340334705, 77.51105641010298], [23.25244992448246, 77.50460395159627], [23.24942952129301, 77.50017971964718], [23.249412324535754, 77.49487264524315], [23.248867234391668, 77.48914040979946], [23.251869027618145, 77.48501256623418], [23.251063706401446, 77.47987307809225], [23.249056325505244, 77.4712275087709]],
+        { "bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 6 }
+    ).addTo(map_bc7b4f5529186df48aec85bee158450a);
+
+
+    var popup_5d1b543d09cc29c843b283ed3755213c = L.popup({
+        "maxWidth": "100%",
+    });
+
+
+
+    var html_8fe7c59e62f6bba2576e914b523723ae = $(`<div id="html_8fe7c59e62f6bba2576e914b523723ae" style="width: 100.0%; height: 100.0%;">Route A</div>`)[0];
+    popup_5d1b543d09cc29c843b283ed3755213c.setContent(html_8fe7c59e62f6bba2576e914b523723ae);
+
+
+
+    poly_line_6b314197069d5f639def1aa9fbdeda34.bindPopup(popup_5d1b543d09cc29c843b283ed3755213c)
+        ;
+
+
+
+
+    var marker_3ffe1937a94a057f107312c0e837cbd0 = L.marker(
+        [23.251609873348414, 77.52345615679546],
+        {
+        }
+    ).addTo(map_bc7b4f5529186df48aec85bee158450a);
+
+
+    var icon_d0df35fe10dec20ff080d879341e1b3b = L.AwesomeMarkers.icon(
+        {
+            "markerColor": "red",
+            "iconColor": "white",
+            "icon": "bus",
+            "prefix": "fa",
+            "extraClasses": "fa-rotate-0",
+        }
+    );
+    marker_3ffe1937a94a057f107312c0e837cbd0.setIcon(icon_d0df35fe10dec20ff080d879341e1b3b);
+
+
+    var popup_e4fe3240f18d834cadda015e487f69c2 = L.popup({
+        "maxWidth": "100%",
+    });
+
+
+
+    var html_333f561526055627779a3f987e564535 = $(`<div id="html_333f561526055627779a3f987e564535" style="width: 100.0%; height: 100.0%;">LNCT COLLEGE (Route A Stop)</div>`)[0];
+    popup_e4fe3240f18d834cadda015e487f69c2.setContent(html_333f561526055627779a3f987e564535);
+
+
+
+    marker_3ffe1937a94a057f107312c0e837cbd0.bindPopup(popup_e4fe3240f18d834cadda015e487f69c2)
+        ;
+
+
+
+
+    var marker_ca1faa2444c1942fdd4cc2a8d9635f8c = L.marker(
+        [23.25088533379877, 77.5175949301517],
+        {
+        }
+    ).addTo(map_bc7b4f5529186df48aec85bee158450a);
+
+
+    var icon_0f44a9e6e63295b1764f74236e882ee4 = L.AwesomeMarkers.icon(
+        {
+            "markerColor": "red",
+            "iconColor": "white",
+            "icon": "bus",
+            "prefix": "fa",
+            "extraClasses": "fa-rotate-0",
+        }
+    );
+    marker_ca1faa2444c1942fdd4cc2a8d9635f8c.setIcon(icon_0f44a9e6e63295b1764f74236e882ee4);
+
+
+    var popup_9d7d090197f77082bb5d13b7e7bfb55d = L.popup({
+        "maxWidth": "100%",
+    });
+
+
+
+    var html_d82e8edf85e68dc2eaf9d313a28efdcd = $(`<div id="html_d82e8edf85e68dc2eaf9d313a28efdcd" style="width: 100.0%; height: 100.0%;">CHAWANI PATHAR (Route A Stop)</div>`)[0];
+    popup_9d7d090197f77082bb5d13b7e7bfb55d.setContent(html_d82e8edf85e68dc2eaf9d313a28efdcd);
+
+
+
+    marker_ca1faa2444c1942fdd4cc2a8d9635f8c.bindPopup(popup_9d7d090197f77082bb5d13b7e7bfb55d)
+        ;
+
+
+
+
+    var marker_24a766c1ede93666a1c42f939080dc00 = L.marker(
+        [23.252727340334705, 77.51105641010298],
+        {
+        }
+    ).addTo(map_bc7b4f5529186df48aec85bee158450a);
+
+
+    var icon_9002195c455bd6284040cf3b8c180d99 = L.AwesomeMarkers.icon(
+        {
+            "markerColor": "red",
+            "iconColor": "white",
+            "icon": "bus",
+            "prefix": "fa",
+            "extraClasses": "fa-rotate-0",
+        }
+    );
+    marker_24a766c1ede93666a1c42f939080dc00.setIcon(icon_9002195c455bd6284040cf3b8c180d99);
+
+
+    var popup_e6fad4ecb82eb79d15fc99f66c6ff612 = L.popup({
+        "maxWidth": "100%",
+    });
+
+
+
+    var html_0dcf388fad9985cec80fdeab7ba2af2c = $(`<div id="html_0dcf388fad9985cec80fdeab7ba2af2c" style="width: 100.0%; height: 100.0%;">KOKTA BYPASS (Route A Stop)</div>`)[0];
+    popup_e6fad4ecb82eb79d15fc99f66c6ff612.setContent(html_0dcf388fad9985cec80fdeab7ba2af2c);
+
+
+
+    marker_24a766c1ede93666a1c42f939080dc00.bindPopup(popup_e6fad4ecb82eb79d15fc99f66c6ff612)
+        ;
+
+
+
+
+    var marker_f8a272d0da204a0d2d96a34f65b95f58 = L.marker(
+        [23.25244992448246, 77.50460395159627],
+        {
+        }
+    ).addTo(map_bc7b4f5529186df48aec85bee158450a);
+
+
+    var icon_4a7b561630930a037beaa5847400ce82 = L.AwesomeMarkers.icon(
+        {
+            "markerColor": "red",
+            "iconColor": "white",
+            "icon": "bus",
+            "prefix": "fa",
+            "extraClasses": "fa-rotate-0",
+        }
+    );
+    marker_f8a272d0da204a0d2d96a34f65b95f58.setIcon(icon_4a7b561630930a037beaa5847400ce82);
+
+
+    var popup_842ecb3b848fa04050defa127fde5a91 = L.popup({
+        "maxWidth": "100%",
+    });
+
+
+
+    var html_6fd778066d6ec4468a0c3a093cb009b9 = $(`<div id="html_6fd778066d6ec4468a0c3a093cb009b9" style="width: 100.0%; height: 100.0%;">NRI COLLEGE (Route A Stop)</div>`)[0];
+    popup_842ecb3b848fa04050defa127fde5a91.setContent(html_6fd778066d6ec4468a0c3a093cb009b9);
+
+
+
+    marker_f8a272d0da204a0d2d96a34f65b95f58.bindPopup(popup_842ecb3b848fa04050defa127fde5a91)
+        ;
+
+
+
+
+    var marker_fcae174bf8dd23b5b20a26b144568935 = L.marker(
+        [23.24942952129301, 77.50017971964718],
+        {
+        }
+    ).addTo(map_bc7b4f5529186df48aec85bee158450a);
+
+
+    var icon_11620bdd5d47de54bd7b3062de0b0edc = L.AwesomeMarkers.icon(
+        {
+            "markerColor": "red",
+            "iconColor": "white",
+            "icon": "bus",
+            "prefix": "fa",
+            "extraClasses": "fa-rotate-0",
+        }
+    );
+    marker_fcae174bf8dd23b5b20a26b144568935.setIcon(icon_11620bdd5d47de54bd7b3062de0b0edc);
+
+
+    var popup_0cf2b19fc1ab28a95c902178cd3dfbfd = L.popup({
+        "maxWidth": "100%",
+    });
+
+
+
+    var html_c4fc7960944009b4e2b5364ea060cca4 = $(`<div id="html_c4fc7960944009b4e2b5364ea060cca4" style="width: 100.0%; height: 100.0%;">ORIENTAL COLLEGE (Route A Stop)</div>`)[0];
+    popup_0cf2b19fc1ab28a95c902178cd3dfbfd.setContent(html_c4fc7960944009b4e2b5364ea060cca4);
+
+
+
+    marker_fcae174bf8dd23b5b20a26b144568935.bindPopup(popup_0cf2b19fc1ab28a95c902178cd3dfbfd)
+        ;
+
+
+
+
+    var marker_763f05d42dde73d0cf355e5c0d68630b = L.marker(
+        [23.249412324535754, 77.49487264524315],
+        {
+        }
+    ).addTo(map_bc7b4f5529186df48aec85bee158450a);
+
+
+    var icon_7e00fe72f5fb92ec8406c18476042e69 = L.AwesomeMarkers.icon(
+        {
+            "markerColor": "red",
+            "iconColor": "white",
+            "icon": "bus",
+            "prefix": "fa",
+            "extraClasses": "fa-rotate-0",
+        }
+    );
+    marker_763f05d42dde73d0cf355e5c0d68630b.setIcon(icon_7e00fe72f5fb92ec8406c18476042e69);
+
+
+    var popup_9acbc034fecd626758db34e2d36bd444 = L.popup({
+        "maxWidth": "100%",
+    });
+
+
+
+    var html_785f4dd4198b4b23bec3c24f0391ad28 = $(`<div id="html_785f4dd4198b4b23bec3c24f0391ad28" style="width: 100.0%; height: 100.0%;">ISHAAN PARK (Route A Stop)</div>`)[0];
+    popup_9acbc034fecd626758db34e2d36bd444.setContent(html_785f4dd4198b4b23bec3c24f0391ad28);
+
+
+
+    marker_763f05d42dde73d0cf355e5c0d68630b.bindPopup(popup_9acbc034fecd626758db34e2d36bd444)
+        ;
+
+
+
+
+    var marker_3cd03ee60ff57a7d427850818f0311db = L.marker(
+        [23.248867234391668, 77.48914040979946],
+        {
+        }
+    ).addTo(map_bc7b4f5529186df48aec85bee158450a);
+
+
+    var icon_51069ab71072c61fab4080e7501d3a79 = L.AwesomeMarkers.icon(
+        {
+            "markerColor": "red",
+            "iconColor": "white",
+            "icon": "bus",
+            "prefix": "fa",
+            "extraClasses": "fa-rotate-0",
+        }
+    );
+    marker_3cd03ee60ff57a7d427850818f0311db.setIcon(icon_51069ab71072c61fab4080e7501d3a79);
+
+
+    var popup_f103f074156742b7ea96e72cf1c6d35a = L.popup({
+        "maxWidth": "100%",
+    });
+
+
+
+    var html_16b5de9cbb1b6e0e76b92ba90810e804 = $(`<div id="html_16b5de9cbb1b6e0e76b92ba90810e804" style="width: 100.0%; height: 100.0%;">GAYATRI HOSPITAL (Route A Stop)</div>`)[0];
+    popup_f103f074156742b7ea96e72cf1c6d35a.setContent(html_16b5de9cbb1b6e0e76b92ba90810e804);
+
+
+
+    marker_3cd03ee60ff57a7d427850818f0311db.bindPopup(popup_f103f074156742b7ea96e72cf1c6d35a)
+        ;
+
+
+
+
+    var marker_7c53059de6ca5def8df8fb34ec98b2f8 = L.marker(
+        [23.251869027618145, 77.48501256623418],
+        {
+        }
+    ).addTo(map_bc7b4f5529186df48aec85bee158450a);
+
+
+    var icon_56849462d0c0ab0e5208abb3cf8c6332 = L.AwesomeMarkers.icon(
+        {
+            "markerColor": "red",
+            "iconColor": "white",
+            "icon": "bus",
+            "prefix": "fa",
+            "extraClasses": "fa-rotate-0",
+        }
+    );
+    marker_7c53059de6ca5def8df8fb34ec98b2f8.setIcon(icon_56849462d0c0ab0e5208abb3cf8c6332);
+
+
+    var popup_e216e24659209869a128bf6332898a6f = L.popup({
+        "maxWidth": "100%",
+    });
+
+
+
+    var html_b192e736707a8839311af491c97d9167 = $(`<div id="html_b192e736707a8839311af491c97d9167" style="width: 100.0%; height: 100.0%;">ANANDNAGAR (Route A Stop)</div>`)[0];
+    popup_e216e24659209869a128bf6332898a6f.setContent(html_b192e736707a8839311af491c97d9167);
+
+
+
+    marker_7c53059de6ca5def8df8fb34ec98b2f8.bindPopup(popup_e216e24659209869a128bf6332898a6f)
+        ;
+
+
+
+
+    var marker_61faa6878f4ce459539c44065379526e = L.marker(
+        [23.251063706401446, 77.47987307809225],
+        {
+        }
+    ).addTo(map_bc7b4f5529186df48aec85bee158450a);
+
+
+    var icon_45696b713acd67740e2da50e5c7acefd = L.AwesomeMarkers.icon(
+        {
+            "markerColor": "red",
+            "iconColor": "white",
+            "icon": "bus",
+            "prefix": "fa",
+            "extraClasses": "fa-rotate-0",
+        }
+    );
+    marker_61faa6878f4ce459539c44065379526e.setIcon(icon_45696b713acd67740e2da50e5c7acefd);
+
+
+    var popup_6b22da81d0bc14a2b47805536879e014 = L.popup({
+        "maxWidth": "100%",
+    });
+
+
+
+    var html_a2e4b2576b4bc246044b6d6f865d4ee3 = $(`<div id="html_a2e4b2576b4bc246044b6d6f865d4ee3" style="width: 100.0%; height: 100.0%;">RATNAGIRI (Route A Stop)</div>`)[0];
+    popup_6b22da81d0bc14a2b47805536879e014.setContent(html_a2e4b2576b4bc246044b6d6f865d4ee3);
+
+
+
+    marker_61faa6878f4ce459539c44065379526e.bindPopup(popup_6b22da81d0bc14a2b47805536879e014)
+        ;
+
+
+
+
+    var marker_6ed8e04312bb520f174c24e0a75f9dc0 = L.marker(
+        [23.249056325505244, 77.4712275087709],
+        {
+        }
+    ).addTo(map_bc7b4f5529186df48aec85bee158450a);
+
+
+    var icon_6d62661458af3dd834419f9d037f2ea5 = L.AwesomeMarkers.icon(
+        {
+            "markerColor": "red",
+            "iconColor": "white",
+            "icon": "bus",
+            "prefix": "fa",
+            "extraClasses": "fa-rotate-0",
+        }
+    );
+    marker_6ed8e04312bb520f174c24e0a75f9dc0.setIcon(icon_6d62661458af3dd834419f9d037f2ea5);
+
+
+    var popup_a426b39ada97e2e5a4cc3937b7b1e39b = L.popup({
+        "maxWidth": "100%",
+    });
+
+
+
+    var html_897b99d98bbf32590188040f8da10b2a = $(`<div id="html_897b99d98bbf32590188040f8da10b2a" style="width: 100.0%; height: 100.0%;">PIPLANI (Route A Stop)</div>`)[0];
+    popup_a426b39ada97e2e5a4cc3937b7b1e39b.setContent(html_897b99d98bbf32590188040f8da10b2a);
+
+
+
+    marker_6ed8e04312bb520f174c24e0a75f9dc0.bindPopup(popup_a426b39ada97e2e5a4cc3937b7b1e39b)
+        ;
+
+
+
+</script>
+
+</html>

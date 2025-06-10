@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BRP</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="https://lnct.ac.in/">
+                <img src="{{ url_for('static', filename='LNCT-Logo.png') }}" alt="LNCT Logo" width="150">
+            </a>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/routes">Routes</a></li>
+                </ul>
+                <form class="d-flex" role="search" action="/search" method="GET">
+                    <input class="form-control me-2" type="search" placeholder="Search as R1,R2" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bootstrap JS CDN (for toggling and dropdowns) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <div
+        style="background-color: #f5f5f7; padding: 40px 20px; margin-left: 60px; margin-top: 80px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 42px; color: #1d1d1f; font-weight: 620; letter-spacing: -0.5px; word-spacing: -5px;">
+        Routes. <span style="color: #6e6e73; font-weight: 620; letter-spacing: -0.4px; word-spacing: -6px;">The easiest
+            way to get to college </span>
+        <p style="color: #6e6e73; font-weight: 620; letter-spacing: -0.4px; word-spacing: -6px;"> from anywhere in the
+            city.</p>
+        <!--<p class="style_heading3__dYl6Z style_title__6uM89">Create sleek slides faster than ever</p>-->
+    </div>
+
+</body>
+
+</html>
